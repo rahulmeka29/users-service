@@ -1,0 +1,40 @@
+[{
+  "_id": {
+    "$oid": "65f5e093d7107803ce3d0106"
+  },
+  "username": "sohamnall@gmail.com",
+  "password": "$2a$10$FM2MlXG9NC2CkBsTxixih.TzB8Bj.C.krMt7HOc1SihI3iq/MUH2i",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65f5e123d7107803ce3d0108"
+  },
+  "username": "bharatgogurla@gmail.com",
+  "password": "$2a$10$12BMsCpve2ts5GsanZ3aHuRMb0mjvGik.wwR2FoScqh0a2IG3whgu",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65f6c26c8bea993fa3e9dd31"
+  },
+  "username": "mekarahul@gmail.com",
+  "password": "$2a$10$TW0xkQCUlQ6dlHLvwmgUI.MxUhScT8OzE7sFZMUY7OU0hfLR3g0GK",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65f6fd688bea993fa3e9dd36"
+  },
+  "username": "sohamhi@gmail.com",
+  "password": "$2a$10$Aw58lcVmsqO/Si.GONs5wOakMUH7cAMUCzKrN3qRy2KBk1cwFOQEm",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65fc5b711587ac29faeefbe2"
+  },
+  "username": "soham",
+  "password": "$2a$10$XjKdIg0RdZlO2kpvegIvQuvDFGBuHjSWKh7uu5rDrQvFrn4ctTQOy",
+  "__v": 0
+}]
