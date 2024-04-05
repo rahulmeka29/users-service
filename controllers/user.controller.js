@@ -5,7 +5,7 @@ const jwt = require('jsonwebtoken')
 const JWT_SECRET = 'sdjkfh8923yhjdksbfma@#*(&@*!^#&@bhjb2qiuhesdbhjdsfg839ujkdhfjk'
   exports.register = async (req, res) => {
     console.log(req.body)  
-    const { username, password: plainTextPassword } = req.body
+    const { username, password: plainTextPassword, firstName, lastName, address } = req.body
     
         if (!username || typeof username !== 'string') {
             return res.json({ status: 'error', error: 'Invalid username' })
@@ -27,7 +27,11 @@ const JWT_SECRET = 'sdjkfh8923yhjdksbfma@#*(&@*!^#&@bhjb2qiuhesdbhjdsfg839ujkdhf
         try {
             const response = await User.create({
                 username,
-                password
+                password,
+                firstName,
+                lastName,
+                address
+
             })
             console.log('User created successfully: ', response)
         } catch (error) {
@@ -51,12 +55,20 @@ const JWT_SECRET = 'sdjkfh8923yhjdksbfma@#*(&@*!^#&@bhjb2qiuhesdbhjdsfg839ujkdhf
 		const token = jwt.sign(
 			{
 				id: user._id,
-				username: user.username
+				username: user.username,
+                firstName: user.firstName,
+                lastName: user.lastName,
+                address: user.address
 			},
 			JWT_SECRET
 		)
 
-		return res.json({ status: 'ok', data: token, username:user.username })
+		return res.json({ status: 'ok', data: token, 
+        username:user.username,
+        firstName: user.firstName,
+        lastName: user.lastName,
+        address: user.address,
+     })
 	}
     res.json({ status: 'error', error: 'Invalid username/password' })
   }
